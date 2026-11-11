@@ -289,7 +289,7 @@ function HeroSection({
                         Pasar Induk Surabaya Sidotopo
                     </motion.p>
                     <motion.h1 variants={heroReveal} className="hero-title">
-                        PASAR bergerak.
+                        Kota bergerak.
                         <br />
                         <em>Pangan menemukan jalannya.</em>
                     </motion.h1>

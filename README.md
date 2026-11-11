@@ -41,6 +41,24 @@ npm run preview
 
 Persyaratan: Docker dengan Docker Compose.
 
+### Development dengan hot reload
+
+Untuk melihat perubahan source secara langsung tanpa membangun ulang image setiap kali:
+
+```bash
+docker compose -f compose.dev.yaml up --build
+```
+
+Buka [http://localhost:3000](http://localhost:3000). Source proyek di-mount ke container dan Vite memperbarui halaman saat file berubah. Polling file watcher diaktifkan agar perubahan terdeteksi dengan baik melalui Docker Desktop di Windows. Hentikan dengan `Ctrl+C`, atau jalankan:
+
+```bash
+docker compose -f compose.dev.yaml down
+```
+
+### Mode produksi
+
+Mode ini menyajikan hasil build statis melalui Nginx:
+
 ```bash
 docker compose up --build -d
 ```
@@ -51,7 +69,7 @@ Buka [http://localhost:3000](http://localhost:3000). Untuk menghentikan layanan:
 docker compose down
 ```
 
-Compose memetakan port host `3000` ke port container `3000`. Jika port 3000 sedang digunakan, hentikan layanan yang menggunakannya atau ubah port host di `compose.yaml`.
+Compose memetakan port host `3000` ke port container `3000`. Jika port 3000 sedang digunakan, hentikan layanan lain yang menggunakannya sebelum menjalankan mode development atau produksi.
 
 ## Git LFS
 

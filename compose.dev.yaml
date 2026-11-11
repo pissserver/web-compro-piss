@@ -1,0 +1,14 @@
+services:
+  web-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: piss-compro-dev
+    environment:
+      VITE_USE_POLLING: "true"
+    ports:
+      - "127.0.0.1:3000:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
