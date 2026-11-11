@@ -10,7 +10,7 @@ import {
   Flower2,
   Mail,
   MapPin,
-  Phone,
+  MessageCircle,
   ShoppingCart,
   Scale,
   Sprout,
@@ -214,6 +214,8 @@ export const mapsUrl = 'https://maps.app.goo.gl/nmYXCcYh5uYysMw56'
 
 export const marketPhone = '+6285225057885'
 
+export const marketWhatsAppUrl = 'https://wa.me/6285225057885'
+
 export const marketEmail = 'pasarinduk.sidotopo@gmail.com'
 
 export const socialLinks = [
@@ -223,7 +225,7 @@ export const socialLinks = [
 
 export const contactDetails = [
   { icon: MapPin, label: 'Alamat', value: marketAddress },
-  { icon: Phone, label: 'Telepon', value: '+62 852 2505 7885', href: `tel:${marketPhone}` },
+  { icon: MessageCircle, label: 'WhatsApp', value: '+62 852 2505 7885', href: marketWhatsAppUrl },
   { icon: Mail, label: 'Email', value: marketEmail, href: `mailto:${marketEmail}` },
   { icon: Clock3, label: 'Jam Operasional', value: 'Setiap hari, 24 jam' },
 ]

@@ -102,5 +102,5 @@ compose.yaml    Pemetaan layanan ke port 3000
 ## Informasi pasar
 
 - Alamat: Jl. Sidotopo Lor No.68A, Sidotopo, Kec. Semampir, Surabaya, Jawa Timur 60152
-- Telepon: +62 852 2505 7885
+- WhatsApp: +62 852 2505 7885
 - Email: pasarinduk.sidotopo@gmail.com

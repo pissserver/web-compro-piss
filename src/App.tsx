@@ -37,7 +37,7 @@ import {
     marketEmail,
     marketAddress,
     marketImages,
-    marketPhone,
+    marketWhatsAppUrl,
     mapsUrl,
     marketStoryVideo,
     navItems,
@@ -908,7 +908,13 @@ function Footer() {
                     <div className="footer-contact">
                         <p>{marketAddress}</p>
                         <p>
-                            <a href={`tel:${marketPhone}`}>+62 852 2505 7885</a>
+                            <a
+                                href={marketWhatsAppUrl}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                WhatsApp · +62 852 2505 7885
+                            </a>
                         </p>
                         <p>
                             <a href={`mailto:${marketEmail}`}>{marketEmail}</a>
